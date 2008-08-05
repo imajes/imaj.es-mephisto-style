@@ -125,11 +125,9 @@ div.sidebar-node h3 {
   font-size: 125%;
   padding: 3px 0px 2px 12px;
   border-bottom: 1px solid #aaa;
-  background: url(tl.gif) no-repeat top left;
 }
 
 div.sidebar-text { 
-  background: url(br.gif) no-repeat bottom right; 
   padding: 8px 12px 5px 12px; 
 }
 div.sidebar-text p  { margin-bottom: 10px; }
