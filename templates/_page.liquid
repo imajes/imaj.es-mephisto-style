@@ -1,3 +1,11 @@
 <div class="hentry" id="article-{{ article.id }}">
   {% include 'article_content' %}
 </div>
+
+{% if article.assets.size != 0 %}
+  {% for asset in article.assets %}
+    {% if asset.is_image %}
+      <p class="image"><img src="{{ asset.path }}"/></p>
+    {% endif %}
+  {% endfor %}
+{% endif %}
