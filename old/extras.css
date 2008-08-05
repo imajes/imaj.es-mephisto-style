@@ -1,0 +1,140 @@
+.Feature {
+	background:url("images/ui/feature_topleft.gif") top left no-repeat;
+	float:right;
+	margin:0 0 10px;
+	padding:0;
+	width:100%;
+}
+.Feature h2 {
+	background:url("images/ui/feature_topright.gif") top right no-repeat;
+	color:#6E9D89;
+	font-size:1.08em;
+	font-weight:700;
+	margin:0;
+	padding:10px 0 17px 16px;
+	text-align:left;
+	text-decoration:underline;
+}
+
+.FeatureBody {
+	_padding:0 15px 0 15px;
+	background:url("images/ui/feature_rightborder.gif") top right repeat-y;
+	font-size:1em;
+	line-height:1em;
+	margin:-2em 0 0;
+	padding:10px 15px 5px;
+	text-align:left;
+}
+.FeatureBody a {
+	background:url("images/ui/link_arrow.gif") top left no-repeat;
+	color:#919191;
+	display:block;
+	font-size:0.95em;
+	padding:0 0 0 12px;
+	text-decoration:none;
+}
+.FeatureBottom {
+	background:url("images/ui/feature_bottomleft.gif") bottom left no-repeat;
+}
+.FeatureBottom p {
+	background:url("images/ui/feature_bottomright.gif") bottom right no-repeat;
+	display:block;
+	margin:-2em 0 0;
+	padding:15px;
+}
+.FeatureBottom a {
+	background:url("images/ui/link_arrow.gif") top left no-repeat;
+	color:#919191;
+	font-size:0.9em;
+	padding:0 0 0 12px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.FeatureBottom a:hover {
+	color:#000000;
+}
+/* ------------------ WIDE FEATURE BOX --------------------- */	
+.FeatureWide {
+	float:left;
+	width: 100%;
+	background: url("images/ui/feature_topleft.gif") top left no-repeat;
+	margin:0% 0% 0% 0%;
+}
+.FeatureWide h2 {
+	background: url("images/ui/feature_topright.gif") top right no-repeat;
+	padding: 14px 0px 17px 16px;
+	font-size: 1.5em;
+	text-align: left;
+	color: #252525;
+	margin: 0;	
+}
+
+.FeatureBodyClean {
+	background:url("images/ui/feature_rightborder.gif") top right repeat-y;
+	font-size:1em;
+	line-height:1em;
+	zmargin:-2em 0 0;
+	padding:10px 15px 5px;
+	text-align:left;
+}
+.FeatureBodyClean a {
+	background:url("images/ui/link_arrow.gif") top left no-repeat;
+	color:#919191;
+	display:block;
+	font-size:0.95em;
+}
+
+.FeatureClean {
+	background:url("images/ui/feature_topleft.gif") top left no-repeat;
+	float:right;
+	margin:0 0 10px;
+	padding:0;
+	width:100%;
+}
+
+.FeatureClean h2 {
+	background:url("images/ui/feature_topright.gif") top right no-repeat;
+	color:#6E9D89;
+	font-size:1.10em;
+	font-weight:700;
+	margin:0;
+	padding:10px 0 17px 16px;
+	text-align:left;
+	text-decoration: none !important;
+}
+
+.module h2 {
+	margin: 0, 0, 10, 0 !important;
+	padding: 2px !important;
+}
+
+.sidebar_title {
+	color: #333 !important;
+	margin: 0 !important;
+	padding-left: 55px !important;
+	font-weight: bold !important;
+	letter-spacing: 2px;
+	font-size: 1.6em !important;
+}
+
+.feed_list, .recent_posts {
+	padding-left: 20px;
+}
+
+.feed_list li, .recent_posts li {
+	vertical-align: middle;
+	padding-bottom: 3px;
+	list-style-image: url('images/buttons/feed.gif');
+}
+
+.recent_posts li {
+	list-style-image: url('images/ui/icon_arrow.gif');
+}
+
+#beta a {
+	background: none !important;
+}
+
+.module-buttons img {
+	padding: 2px;
+}

@@ -1,0 +1,114 @@
+/**
+ * Controls the main layout (width, height, margin, padding)
+ *
+ * #container
+ *   #page
+ *     #above-header
+ *     #header
+ *     #subheader
+ *     #content
+ *     #sidebar
+ *   #shadow
+ *   #footer
+**/
+
+body {
+  background: #333;
+  text-align: center; 
+  font-size: 13px; 
+  min-width: 950px;
+}
+
+div#container {
+  background: #593129;
+  margin:0 auto;
+  padding-left:40px;
+  padding-right: 40px;
+  top:0;
+  width: 80%; 
+  text-align: left;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+
+div#page {
+  width: 899px; 
+}
+
+div#above-header {
+  z-index: 10;
+  width: 599px; 
+  height: 30px;
+  margin-left: 100px;
+  line-height: 10px;
+  vertical-align: bottom;
+  text-align: right;
+}
+div#above-header li { 
+  display: inline;
+  text-transform: uppercase;
+  float: right;
+  bottom: 0;
+  height: 20px;
+  line-height: 9px;
+  vertical-align: text-bottom;
+  margin: 0 5px 0 0;
+  padding: 10px 5px 0 0;
+}
+div#above-header li img {
+  margin: 0;
+  margin-bottom: -4px;
+  padding: 0;
+}
+div#above-header li a {
+  padding-left: 2px;
+  padding-right: 2px;
+  color: white;
+}
+
+div#header {
+  padding: 0;
+  height: 300px;
+}
+div#subheader { 
+  clear: both; 
+  height: 26px; 
+  /*border-top: 1px solid #888; */
+}
+
+div#logo {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  float: left;
+  width: 194px;
+  height: 199px;
+}
+div#illo {
+  z-index: 2;
+  float: left;
+  margin-top: -10px;
+  margin-left: 20px;
+  width: 600px;
+}
+
+div#content { 
+  float: left; 
+  width: 598px; 
+  padding: 20px;
+  border-right: 1px solid #fbb371;
+}
+
+div#sidebar {
+  float: left; 
+  width: 214px;
+  padding: 5px; 
+  margin-top: 15px; /*margin: 20 20 0 0;*/ 
+}
+
+div#footer { 
+  color: #efefef;
+  padding: 3px 5px 10px 0; 
+  text-align: right;
+  font-size: 10px; 
+}

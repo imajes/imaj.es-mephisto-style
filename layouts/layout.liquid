@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% head %}
+  <title>{{ site.title }}{% if article %}: {{ article.title }}{% else%} - {{ site.subtitle }}{% endif %}</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  {% comment %}
+  <!-- Use this RSS link if you are using FeedBurner (recommended) -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="changeme" />
+  {% endcomment %}
+  <!-- Include Mephisto's default RSS feed -->
+  {{ head.feed }}
+
+  {{ 'main' | stylesheet }}
+{% endhead %}
+<body>
+<div id="container">
+  <div id="page">
+    <div id="above-header">
+      
+      {% if site.sections.size > 0 %}
+        <div class="sidebar-text">
+          <ul>
+          {% for section in site.sections %}
+            <li>{{ section | link_to_section }} 
+              {% if forloop.first == false %}
+                  <img src="/images/ui/icon_arrow.gif" width="7" height="7" /> 
+               {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+      </div>
+      {% endif %}
+      
+    </div>
+    
+    <div id="header">
+      <div id="logo">
+        <img src="/images/logo.png" width="199" height="194" />
+      </div>
+      <div id="illo">
+        <img src="/images/illo.png" width="596" height="259" />
+      </div>
+    </div> 
+    <div id="subheader"></div>
+    
+    <div id="content">
+      {{ content_for_layout }}
+    </div>
+
+    <div id="sidebar">
+      <h3>The Sidebar</h3>
+      <div class="sidebar-node">
+      </div>
+
+      <!-- Delete the comment blocks if you'd like to display the search form -->
+      <div class="sidebar-node">
+        <div id="search" class="search">
+          <form action="/search" id="sform" method="get" name="sform">
+            <p><input type="text" id="q" name="q" value="" /></p>
+          </form>Search
+        </div>
+      </div>
+
+      <!-- Delete the comment blocks if you'd like to display links for the monthly archive -->
+      {% if section.months.size > 0 %}
+      <div class="sidebar-node">
+        <h3>Archives</h3>
+        <div class="sidebar-text">
+          <ul>
+          {% for month in section.months %}
+            <li>{{ section | link_to_month: month }} ({{ section | monthly_articles: month | size }})</li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Delete the comment blocks if you'd like to list out your tags -->
+      {% if site.tags.size > 0 %}
+      <div class="sidebar-node">
+        <h3>Tags</h3>
+        <div class="sidebar-text">
+	  <ul>
+	  {% for tag in site.tags %}
+	    <li>{{ tag | link_to_tag }} ({{ tag | tagged_articles | size }})</li>
+	  {% endfor %}
+        </ul>
+	</div>
+      </div>
+      {% endif %}
+    
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div id="shadow"></div>
+  <div id="footer">
+    <a href="/">{{ site.title }}</a> 
+    <img src="/images/ui/link_arrow.gif" width="7" height="7" /> 
+    powered by <a href="http://www.mephistoblog.com/">mephisto</a> 
+    <img src="/images/ui/link_arrow.gif" width="7" height="7" />
+    styled by <a href="http://www.smokeclouds.com/">smokeclouds</a>
+  </div>
+  
+</div>
+
+</body>
+</html>

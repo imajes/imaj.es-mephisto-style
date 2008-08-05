@@ -1,0 +1,10 @@
+<div class="vcard">
+  
+    Posted on <span class="published">{{ article.published_at | date: '%B %d, %Y' }} </span>
+<!--
+    {% if article.accept_comments %}
+    <span class="comment-count">{{ article | link_to_comments }}</span>
+    {% endif %}!-->
+</div>
+<abbr class="published" title="{{ article.published_at | date: '%Y-%m-%dT%H:%M:%S+00:00' }}"></abbr>
+<!--<br class="clear" />!-->

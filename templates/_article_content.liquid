@@ -1,0 +1,10 @@
+<div class="entry-content">
+  {{ article.content }}
+  {% if article.excerpt %}
+    {% unless mode == 'single' %}
+    <div class="extended">
+      <p>{{ article | link_to_article: "Continue reading..." }}</p>
+    </div>
+    {% endunless %}
+  {% endif %}
+</div>

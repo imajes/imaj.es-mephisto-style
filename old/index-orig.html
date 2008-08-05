@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=<$MTPublishCharset$>" />
+   <meta name="generator" content="Movable Type <$MTVersion$>" />
+   
+   <link rel="stylesheet" href="<$MTLink template="styles-site.css"$>" type="text/css" />
+   <link rel="stylesheet" href="<$MTLink template="extras.css"$>" type="text/css" />
+
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="<$MTLink template="atom.xml"$>" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<$MTLink template="index.xml"$>" />
+   
+   <title><$MTBlogName encode_html="1"$></title>
+   
+   <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$MTLink template="rsd.xml"$>" />
+   
+   <MTBlogIfCCLicense>
+   <$MTCCLicenseRDF$>
+   </MTBlogIfCCLicense>
+</head>
+<body class="layout-two-column-right">
+    <div id="container">
+        <div id="container-inner">
+            <div id="banner">
+                <div id="banner-inner" class="pkg">
+                    <img src="images/logosquare.gif" id="logo-square" title="imajesdotinfo:changeinertia" />
+                    <img src="images/header.gif" id="illo" title="working at my desk" alt="working at my desk, in the coffee house" />
+                </div>
+      </div>
+            <div id="pagebody">
+            <div id="pagebody-inner">
+                <div id="beta">
+                    <div class="FeatureClean">
+                        <h2 class="sidebar_title">toolbox</h2>
+                        <div class="FeatureBodyClean">                    
+                      <div id="beta-inner" class="pkg">
+                          <div class="module-search module">
+                          <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="<$MTCGIPath$><$MTSearchScript$>">
+                               <input type="hidden" name="IncludeBlogs" value="<$MTBlogID$>" />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="go &raquo;" />
+                            </form>
+                         </div>
+                        </div>
+                         <MTIfArchiveTypeEnabled archive_type="Category">
+                       <div class="module-categories module">
+                         <h2 class="module-header">Categories</h2>
+                         <div class="module-content">
+                         <MTTopLevelCategories>
+                         <MTSubCatIsFirst><ul class="module-list"></MTSubCatIsFirst>
+                            <MTIfNonZero tag="MTCategoryCount">
+                            <li class="module-list-item"><a href="<$MTCategoryArchiveLink$>" title="<$MTCategoryDescription$>"><MTCategoryLabel></a>
+                            <MTElse>
+                            <li class="module-list-item"><MTCategoryLabel>
+                            </MTElse>
+                            </MTIfNonZero>
+                               <MTSubCatsRecurse>
+                            </li>
+                         <MTSubCatIsLast></ul></MTSubCatIsLast>
+                         </MTTopLevelCategories>
+                         </div>
+                       </div>
+                         </MTIfArchiveTypeEnabled>
+                       <!--  <MTIfArchiveTypeEnabled archive_type="Monthly">
+                      <div class="module-archives module">
+                         <h2 class="module-header"><a href="<$MTLink template="styles-site.css"$>">Archives</a></h2>
+                         <div class="module-content">
+                         <MTArchiveList archive_type="Monthly">
+                            <MTArchiveListHeader><ul class="module-list"></MTArchiveListHeader>
+                               <li class="module-list-item"><a href="<$MTArchiveLink$>"><$MTArchiveTitle$></a></li>
+                            <MTArchiveListFooter></ul></MTArchiveListFooter>
+                         </MTArchiveList>
+                         </div>
+                      </div>
+                         </MTIfArchiveTypeEnabled> -->
+                      <div class="module-archives module">
+                         <h2 class="module-header">recent posts</h2>
+                         <div class="module-content">
+                            <ul class="recent_posts">
+                            <MTEntries lastn="10">
+                               <li><a href="<$MTEntryPermalink$>"><$MTEntryTitle$></a></li>
+                            </MTEntries>
+                            </ul>
+                         </div>
+                      </div>
+                      <div class="module module-feeds">
+                             <h2 class="module-header">feed me</h2>
+                             <div class="module-content">
+                             <ul class="feed_list">
+                                <li><a href="<$MTLink template="atom.xml"$>">Subscribe with Atom</a></li>
+                                <li><a href="<$MTLink template="index.xml"$>">Subscribe with RSS 2.0</a></li>
+                                <li><a href="<$MTLink template="index.rdf"$>">Subscribe with RSS 1.0</a></li>
+                                <li><a href="http://www.sixapart.com/about/feeds">Find out more about feeds</a></li>
+                             </ul>
+                         </div>
+                      </div>
+                      <div class="module module-buttons">
+                         <h2 class="module-header">buttons</h2>
+                         <div class="module-content">
+                           <a href="http://www.sixapart.com/movabletype/"><img src="/images/buttons/mtpowered.gif" alt="mt powered" /></a>
+                           <MTBlogIfCCLicense>
+                              <a href="<$MTBlogCCLicenseURL$>"><img alt="Creative Commons License" src="/images/buttons/cc2.gif" /></a>
+                              <script type="text/javascript" src="http://embed.technorati.com/embed/rizu2mxn83.js"></script>
+                           </MTBlogIfCCLicense>
+                         </div>
+                      </div>
+                      </div>
+                      </div>
+                      <div class="FeatureBottom"><p>&nbsp;</p></div>    
+                      </div>                   
+                </div>
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+                  
+                     <MTEntries>
+                     <$MTEntryTrackbackData$>
+                     
+                     <a id="a<$MTEntryID pad="1"$>"></a>
+                     <div class="FeatureWide">
+                      <div class="entry" id="entry-<$MTEntryID$>">
+                        <h2><$MTEntryTitle$></h2>
+                          <div class="FeatureBody">
+                           <MTDateHeader><p class="date-header"><$MTEntryDate format="%x"$></p></MTDateHeader>
+                           <$MTEntryBody$>
+                           <MTEntryIfExtended>
+                           <p class="entry-more-link">
+                              <a href="<$MTEntryPermalink$>#more">Continue reading "<$MTEntryTitle$>" &raquo;</a>
+                           </p>
+                           </MTEntryIfExtended>
+                           </div>
+                       </div>
+                           
+                           <div class="FeatureBottom">
+                             <p class="entry-footer">
+                              <span class="post-footers">Posted by <$MTEntryAuthorDisplayName$> at <$MTEntryDate format="%X"$></span> <span class="separator">|</span> <a class="permalink" href="<$MTEntryPermalink$>">Permalink</a>
+                              <MTIfCommentsActive>| <a href="<$MTEntryPermalink$>#comments">Comments (<$MTEntryCommentCount$>)</a></MTIfCommentsActive>
+                              <MTIfPingsActive>| <a href="<$MTEntryPermalink$>#trackback">TrackBacks (<$MTEntryTrackbackCount$>)</a></MTIfPingsActive>
+                           </p>
+                           </div>
+                        </div>
+                     </div>
+					  <br /><br />
+                     </MTEntries>
+                  </div>
+               </div>
+            </div>
+         </div>
+        </div>
+    </div>
+</body>
+</html>

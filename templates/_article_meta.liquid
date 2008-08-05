@@ -1,0 +1,11 @@
+<p class="article-footer">
+  {% if article.sections.size > 0 %}
+    Filed under: {% for section in article.sections %} {{ section | link_to_section }}{% endfor %} |
+  {% endif %}
+  {% if article.tags.size > 0 %}
+    Tagged with: {% for tag in article.tags %}{{ tag | link_to_tag }}&nbsp;{% endfor %} |
+  {% endif %}
+  {% if article.accept_comments || article.comments_count > 0 %}
+    {{ article | link_to_comments }}
+  {% endif %}
+</p>
